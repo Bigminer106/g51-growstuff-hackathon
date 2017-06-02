@@ -6,45 +6,45 @@ const app = express();
 app.use(cors());
 
 const growStuff = [{
-  name: "tomato",
+  name: "Tomato",
   image: 'images/tomato.png',
   lifeCycle: 3,
   tempMin: 68,
   tempMax: 80,
   nutrientRatio: [5,10,10],
-  climate: "temperate"
+  climate: "Temperate"
 }, {
-  name: "potato",
+  name: "Potato",
   image: 'images/potato.png',
   lifeCycle: 4,
   tempMin: 50,
   tempMax: 80,
   nutrientRatio: [6,3,8],
-  climate: "any"
+  climate: "Any"
 }, {
-  name: "carrot",
+  name: "Carrot",
   image: 'images/carrot.png',
   lifeCycle: 3,
   tempMin: 30,
   tempMax: 80,
   nutrientRatio: [5,15,15],
-  climate: "temperate"
+  climate: "Temperate"
 }, {
-  name: "corn",
+  name: "Corn",
   image: 'images/corn.png',
   lifeCycle: 3,
   tempMin: 40,
   tempMax: 85,
   nutrientRatio: [7,9,6],
-  climate: "any"
+  climate: "Any"
 }, {
-  name: "onion",
+  name: "Onion",
   image: 'images/onion.png',
   lifeCycle: 6,
   tempMin:40,
   tempMax: 80,
   nutrientRatio: [3,4,3],
-  climate: "temperate"
+  climate: "Temperate"
 }];
 
 app.get('/growstuff', (request, response) => {
